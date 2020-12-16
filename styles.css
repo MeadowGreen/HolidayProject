@@ -1,0 +1,333 @@
+Skip to content
+Search or jump to…
+
+Pull requests
+Issues
+Marketplace
+Explore
+ 
+@MeadowGreen 
+arivera178
+/
+Portfolio10.4
+1
+10
+Code
+Issues
+Pull requests
+Actions
+Projects
+Wiki
+Security
+Insights
+Portfolio10.4/body.css
+@arivera178
+arivera178 Worked on stuff, got started with making the site for tutoring
+Latest commit d3890a3 on Apr 19
+ History
+ 1 contributor
+291 lines (274 sloc)  6.07 KB
+  
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+html, body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    padding:0;
+    margin:0;
+	background: #000000;
+	font-size: 16px;
+}
+::selection {
+  color: rgb(57, 57, 57);
+  background: rgba(57, 57, 57, .99);
+}
+::-moz-selection {
+  color: rgba(0,0,0,.99);
+  background: rgba(57,57, 57,.99);
+}
+/* ----- intro ----- */
+.header {
+	margin-top: 5vh;	
+}
+	@media screen and (max-width: 767px) {
+		.header {
+			margin-top: 20vh;
+		}
+	}
+h1 {
+	font-family: "Bold";
+	font-size: 252px;
+    font-size: 17.5vw;
+	line-height: 80%;
+	color: #FFFFFF;
+	text-transform: uppercase;
+
+}
+	@media screen and (max-width: 767px) {
+		h1 {
+    		font-size: 28vw;
+	    }
+	}
+.alignleft {
+	text-align: left;
+}
+.alignright {
+	text-align: right;
+}
+h2 {
+	font-family: "Medium";
+	font-size: 35px;
+	line-height: 115%;
+	color: #FFFFFF;
+	margin: 10vh 0 20vh 0vh;
+	max-width: 40%;
+	overflow: hidden;
+}
+	@media screen and (max-width: 767px) {
+		h2 {
+			max-width: 100%;
+			font-size: 30px;
+		}
+	}
+/* ----- animation ----- */
+.animate {
+	-webkit-animation:animate .5s cubic-bezier(0.2, 0.6, 0.2, 1);
+	-moz-animation:animate .5s cubic-bezier(0.2, 0.6, 0.2, 1);
+	animation:animate .5s cubic-bezier(.59, .01, .28, 1);
+	-webkit-animation-fill-mode:backwards;
+	-moz-animation-fill-mode:backwards;
+	animation-fill-mode:backwards;
+}
+@-webkit-keyframes animate {
+	0% {opacity: 0;-webkit-transform: translateY(-50px);}
+	100% {opacity: 1;-webkit-transform: translateY(0%);}	
+}
+
+@keyframes animate {
+	0% {opacity: 0;transform: translateY(-50px);}
+	100% {opacity: 1;transform: translateY(0%);}	
+}
+.delayheader { -webkit-animation-delay: .3s; animation-delay: .3s;}
+.delaycontent { -webkit-animation-delay: 0.8s; animation-delay: 0.8s;}
+/* ----- content ----- */
+.content {
+	max-width: 40%;
+	margin-top: 10vh;
+	margin-bottom: 20vh;
+	margin-left: 50%;
+}
+	@media screen and (max-width: 767px) {
+		.content {
+			max-width: 100%;
+			margin-top: 0;
+			margin-left: 0;
+		}
+	}
+p {
+	font-family: "Regular";
+	font-size: 24px;
+	color: #FFFFFF;
+	line-height: 125%;
+	margin-bottom: 4vh;
+	overflow: hidden;
+}
+p a, p a:after, p a:visited {
+	font-family: "Bold";
+	font-size: 24px;
+	color: rgb(57, 57, 57);
+	line-height: 125%;
+	cursor: pointer;
+}
+
+/* ----- contact ----- */
+.contact-list {
+	margin-top: 10vh;	
+}
+.contact {
+	font-family: "Medium";
+	font-size: 60px;
+	color: #FFFFFF;
+	line-height: 133%;
+}
+	@media screen and (max-width: 767px) {
+		.contact {
+			font-size: 10vw;
+		}
+	}
+.contact a, a:after, a:visited {
+	font-family: "Medium";
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.resumetext{
+	font-family: "Medium";
+	font-size: 60px;
+	color: #FFFFFF;
+	line-height: 133%;
+}
+#topnav {
+	transition: top 0.3s; /* Transition effect when sliding down (and up) */
+  }
+  /* FONTS */
+@font-face {
+	font-family: McLaren;
+	src: url(McLaren-Regular.woff) format("woff"),
+	     url(McLaren-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: gilbert-color;
+  src:url("https://use.typekit.net/af/591b7d/00000000000000003b9b3d8c/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"),url("https://use.typekit.net/af/591b7d/00000000000000003b9b3d8c/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"),url("https://use.typekit.net/af/591b7d/00000000000000003b9b3d8c/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("truetype");
+  font-display:auto;
+  font-style:normal;
+  font-weight:7em;
+  }
+  @font-face {
+    font-family: Barriecito;
+    src: url(Barriecito-Regular.woff) format("woff"),
+         url(Barriecito-Regular.ttf) format("ttf");
+  }
+body {margin:0;font-family:Arial}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(0,0,0,0);
+  font-family: McLaren, cursive;
+position: auto;
+}
+
+.topnav a {
+  font-weight: 700;
+  font-style: normal;
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 1% 1%;
+  text-decoration: none;
+  font-size: 17px;
+
+}
+
+.active {
+  background-color: rgb(57, 57, 57);
+  color: rgb(57, 57, 57);
+}
+
+.topnav .icon {
+  display: none;
+}
+
+.dropdown { 
+  float: right;
+  overflow: hidden;
+  position: right,fixed;
+}
+
+.dropdown .dropbtn {
+  font-size: 17px;    
+  border: none;
+  outline: none;
+  color: #f2f2f2;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: rgb(57, 57, 57);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.topnav a:hover, .dropdown:hover .dropbtn {
+  background-color: #555;
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a:not(:first-child), .dropdown .dropbtn {
+    display: none;
+  }
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .topnav.responsive .dropdown {float: left;}
+  .topnav.responsive .dropdown-content {position: relative;}
+  .topnav.responsive .dropdown .dropbtn {
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+}
+div#myTopnav{
+  position:relative;
+  width: 100%;
+}
+© 2020 GitHub, Inc.
+Terms
+Privacy
+Security
+Status
+Help
+Contact GitHub
+Pricing
+API
+Training
+Blog
+About
